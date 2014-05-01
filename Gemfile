@@ -47,3 +47,7 @@ gem 'less-rails'
 gem "twitter-bootstrap-rails"
 
 gem "haml-rails"
+
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+gem "nested_form"

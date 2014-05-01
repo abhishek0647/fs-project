@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :events
+
+  ActiveAdmin.routes(self)
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  
   resources :tags
 
   devise_for :users
