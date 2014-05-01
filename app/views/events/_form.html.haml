@@ -31,7 +31,7 @@
     = f.label :venue
     = f.text_field :venue
   = f.fields_for :event_tags do |et|
-    = et.select :tag_id, options_for_select(Tag.all.collect(&:name))
+    = et.select :tag_id, options_for_select(build_options_for_collection(Tag.all),et.object.tag_id)
     = et.link_to_remove "Remove"
   = f.link_to_add "Add tag", :event_tags
   = f.hidden_field :user_id, :value => current_user.id

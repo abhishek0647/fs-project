@@ -4,6 +4,6 @@ class StaticPagesController < ApplicationController
 	end
 
 	def dashboard
-		@events = Event.all
+		@events = current_user.subscribed_events
 	end
 end
