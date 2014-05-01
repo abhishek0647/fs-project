@@ -9,6 +9,6 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :user_tags, :allow_destroy => true
 
   def subscribed_events
-  	Event.joins(:tags).where('tags.id in (?)',tags.collect(&:id))
+  	Event.joins(:event_tags).where('event_tags.tag_id in (?)',tags.collect(&:id))
   end
 end
