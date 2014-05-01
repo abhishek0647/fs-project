@@ -1,0 +1,9 @@
+.row-fluid
+	.span6.offset3{:style => 'border:1px solid gray;padding:20px'}	
+		= nested_form_for @user do |f|
+			= f.fields_for :user_tags do |ut|
+				= ut.select :tag_id, options_for_select(build_options_for_collection(Tag.all),ut.object.tag_id)
+				= ut.link_to_remove "Remove"
+			= f.link_to_add "Add interest", :user_tags
+			%br
+			= f.submit

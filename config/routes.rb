@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
+  resources :events
+
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  
+  
   resources :tags
 
+  get '/interests' => 'users#interests'
   devise_for :users
+  resources :users
 
   get '/home' => 'static_pages#home'
   get '/dashboard' => 'static_pages#dashboard'
