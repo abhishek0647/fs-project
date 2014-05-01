@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   resources :tags
 
   get '/interests' => 'users#interests'
-  resources :users
   devise_for :users
+  resources :users
 
   get '/home' => 'static_pages#home'
   get '/dashboard' => 'static_pages#dashboard'
