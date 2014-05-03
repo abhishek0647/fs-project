@@ -43,8 +43,8 @@ Rails.application.configure do
     :port => 587,
     :authentication => :plain,
     :domain => 'gmail.com',
-    :user_name => 'shona.nehal@gmail.com',
-    :password => '1mv10is031neh'
+    :user_name => 'abhishek0647@gmail.com',
+    :password => 'bestobetto'
   }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
