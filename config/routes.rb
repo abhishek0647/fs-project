@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  namespace :user do  
+      resources :users, only: :show do
+         post :generate_new_password_email
+      end
+   end
   
   
   resources :tags
