@@ -23,23 +23,19 @@
                     </div>
 
                     <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span><!-- 
-                        <input type="text" placeholder="Username" class="form-control pad-20"> -->
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
                         <%= f.email_field :email, autofocus: true, class: 'form-control pad-20', placeholder: 'Username' %>
                     </div>                    
                     <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span><!-- 
-                        <input type="password" placeholder="Password" class="form-control"> -->
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                         <%= f.password_field :password, autocomplete: "off", placeholder: 'Password', class: 'form-control' %>
                     </div>                    
 
                     <div class="row">
                         <div class="col-md-6">
-                            <!-- <label class="checkbox"><input type="checkbox"> Stay signed in</label>  -->
                             <%= f.check_box :remember_me, class: 'checkbox' %> <%= f.label :Stay_Signed_In %>
                         </div>
                         <div class="col-md-6">
-                           <!--  <button class="btn-u pull-right" type="submit">Login</button>  -->
                            <%= f.submit "Sign in", class: 'btn-u pull-right sign-in' %>                       
                         </div>
                     </div>
@@ -47,8 +43,7 @@
                     <hr>
 
                     <h4>Forget your Password ?</h4>
-                    <p>no worries, <!-- <a class="color-green" href="#">click here</a>
-                     --> <%= link_to "click here", new_password_path(resource_name), class: 'forgot-password' %>
+                    <p>no worries, <%= link_to "click here", new_password_path(resource_name), class: 'forgot-password' %>
                       to reset your password.</p>
                 <% end %>            
             </div>
