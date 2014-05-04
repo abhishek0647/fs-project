@@ -48,4 +48,13 @@ Rails.application.configure do
   }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+
+    config.assets.precompile += %w( 'bootstrap.min' )
+    config.assets.precompile += %w( 'style' )
+    config.assets.precompile += %w( 'line-icons' )
+    config.assets.precompile += %w( 'font-awesome.min' )
+    config.assets.precompile += %w( 'page_log_reg_v1' )
+    config.assets.precompile += %w( 'default.min' )
+    config.assets.precompile += %w( 'custom' )
 end

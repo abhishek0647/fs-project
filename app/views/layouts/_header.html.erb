@@ -1,0 +1,134 @@
+<div class="wrapper"> 
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right">   
+                    <li><!-- <a href="page_login.html">Login</a> --><%= link_to 'Login', new_user_session_path %></li>   
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <%= link_to 'MVIT A-Z', dashboard_path, class: 'navbar-brand' %>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><%= link_to 'Option 1', '#' %></li>
+                                <li><%= link_to 'Option 2', '#' %></li>
+                            </ul>
+                        </li>
+                        <!-- End Home -->
+
+                        <!-- Pages -->                        
+                        <li class="dropdown active">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Idea-Share
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- About Pages -->
+                                <li class="dropdown-submenu">
+                                    <ul class="dropdown-menu">
+                                        <li><%= link_to 'Option 1', '#' %></li>
+                                        <li><%= link_to 'Option 1', '#' %></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End About Pages -->
+                            </ul>
+                        </li>
+                        <!-- End Pages -->
+
+                        <!-- Features -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Typography -->
+                                <li class="dropdown-submenu">
+                                    <li><%= link_to 'Option 1', '#' %></li>
+                                    <ul class="dropdown-menu">    
+                                        <li><%= link_to 'Option 1', '#' %></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End Typography -->
+                            </ul>
+                        </li>
+                        <!-- End Features -->
+
+                        <!-- Portfolio -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><%= link_to 'Option 1', '#' %></li>     
+                            </ul>
+                        </li>
+                        <!-- Ens Portfolio -->
+
+                        <!-- Blog -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><%= link_to 'Option 1', '#' %></li> 
+                            </ul>
+                        </li>
+                        <!-- End Blog -->
+
+                        <!-- Contacts -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Contacts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><%= link_to 'Abhishek', '#' %></li>
+                                <li><%= link_to 'Sumedha', '#' %></li>
+                                <li><%= link_to 'Anisha', '#' %></li>
+                                <li><%= link_to 'Nehal', '#' %></li> 
+                            </ul>
+                        </li>                    
+                        <!-- End Contacts -->
+
+                        <!-- Search Block -->
+                        <li>
+                            <i class="search fa fa-search search-btn"></i>
+                            <div class="search-open">
+                                <div class="input-group animated fadeInDown">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn-u" type="button">Go</button>
+                                    </span>
+                                </div>
+                            </div>    
+                        </li>
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->  
