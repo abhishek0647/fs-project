@@ -6369,6 +6369,15 @@ ul.blog-tags a:hover {
 	border-top: solid 2px #72c02c;
 }
 
+.new_user {
+	color: #555;
+	padding: 30px;
+	background: #fefefe;
+	border: solid 1px #eee;
+	box-shadow: 0 0 3px #eee;
+	margin-bottom: 50px;
+}
+
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -8007,6 +8016,7 @@ you can use the generic selector below, but it's slower:
 	padding: 10px 0 6px;
 	border-bottom: solid 1px #eee;
 	background: url(../img/breadcrumbs.png) repeat;
+	margin-bottom: 50px;
 }
 .breadcrumbs h1 {
 	color: #666;
