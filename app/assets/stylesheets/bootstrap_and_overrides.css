@@ -147,6 +147,11 @@ input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 input {
   line-height: normal;
 }
@@ -6028,6 +6033,35 @@ a.read-more:hover {
   background: #e74c3c;
 }
 
+
+.btn-u.btn-u-red:hover, 
+.btn-u.btn-u-red:focus, 
+.btn-u.btn-u-red:active, 
+.btn-u.btn-u-red.active, 
+.open .dropdown-toggle.btn-u.btn-u-red {
+   background: #c0392b;
+}
+
+.btn-u.btn-u-orange {
+   background: #e67e22;
+}
+.btn-u.btn-u-orange:hover, 
+.btn-u.btn-u-orange:focus, 
+.btn-u.btn-u-orange:active, 
+.btn-u.btn-u-orange.active, 
+.open .dropdown-toggle.btn-u.btn-u-orange {
+   background: #d35400;
+}
+.btn-u.btn-u-green {
+   background: #2ecc71;
+}
+.btn-u.btn-u-green:hover, 
+.btn-u.btn-u-green:focus, 
+.btn-u.btn-u-green:active, 
+.btn-u.btn-u-green.active, 
+.open .dropdown-toggle.btn-u.btn-u-green {
+   background: #27ae60;
+}
 /*Service
 ------------------------------------*/
 .service .service-icon {
@@ -6067,10 +6101,32 @@ a.read-more:hover {
 /*Typography
 ------------------------------------*/
 /*Heading*/
+/*Block Headline*/
+.headline {
+  display: block;
+  margin: 10px 0 25px 0;
+  border-bottom: 1px dotted #e4e9f0;
+}
+
+.headline h2 {
+  font-size: 22px;
+}
+
 .headline h2, 
 .headline h3, 
 .headline h4 {
-	border-bottom:2px solid #72c02c;
+  margin: 0 0 -2px 0;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid #72c02c;
+}
+
+.headline-md {
+  margin-bottom: 15px;
+}
+
+.headline-md h2 {
+  font-size: 21px;
 }
 
 /*Blockquote*/
@@ -8274,6 +8330,8 @@ a.thumbnail {
   margin-bottom: 20px;
 }
 
+.margin-bottom-40 {
+ margin-bottom:40px;}
 .team .thumbnail-style:hover h3 a {
 	color: #72c02c !important;
 }
@@ -10238,3 +10296,107 @@ margin-bottom: 20px;
 .one-page .one-green {
   background: #2ecc71;
 }
+blockquote {
+  padding: 5px 15px;
+  border-left-width: 2px;
+}
+
+blockquote p {
+  font-size: 14px;
+  font-weight: 400;   
+}
+
+blockquote h1,
+blockquote h2,
+blockquote span {
+  font-size: 18px;
+  margin: 0 0 8px;
+  line-height: 24px;
+}
+
+/*Blockquote Styles*/
+blockquote.bq-text-lg p,
+blockquote.bq-text-lg small {
+  text-transform: uppercase;
+}
+
+blockquote.bq-text-lg p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+blockquote.text-right,
+blockquote.hero.text-right {
+  border-left: none;
+  border-right: 2px solid #eee;
+}
+
+blockquote.hero.text-right,
+blockquote.hero.text-right:hover {
+   border-color: #555;
+}
+
+blockquote:hover,
+blockquote.text-right:hover {
+  border-color: #72c02c;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+blockquote.bq-dark,
+blockquote.bq-dark:hover {
+  border-color: #585f69;
+}
+
+blockquote.bq-green {
+  border-color: #72c02c;
+}
+
+/*Blockquote Hero Styles*/
+blockquote.hero {
+  border: none;
+  padding: 18px;
+  font-size: 16px;
+  background: #f3f3f3;
+  border-left: solid 2px #666;
+}
+
+blockquote.hero:hover {
+  background: #eee;
+  border-left-color: #666;
+}
+
+blockquote.hero.hero-dark,
+blockquote.hero.hero-default {
+  border: none;
+}
+
+blockquote.hero.hero-dark {
+  background: #444;
+}
+
+blockquote.hero.hero-dark:hover {
+  background: #555;
+}
+
+blockquote.hero.hero-default {
+  background: #72c02c;
+}
+
+blockquote.hero.hero-default:hover {
+  background: #5fb611;
+}
+
+blockquote.hero.hero-dark p,
+blockquote.hero.hero-dark h2,
+blockquote.hero.hero-dark small,
+blockquote.hero.hero-default p,
+blockquote.hero.hero-default h2,
+blockquote.hero.hero-default small {
+  color: #fff;
+  font-weight: 200;
+}
+
