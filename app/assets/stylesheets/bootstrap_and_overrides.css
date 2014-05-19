@@ -6,7 +6,7 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-  /*!
+/*!
  * Bootstrap v3.1.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -147,6 +147,12 @@ input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 input {
   line-height: normal;
 }
@@ -4457,6 +4463,7 @@ a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #428bca;
+  text-decoration: none;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6014,10 +6021,48 @@ a.read-more:hover {
   border: none;
 }
 
-.btn-u:hover {
-	background: #5fb611;
+.one-page-inner p {
+  margin-bottom: 25px
 }
 
+.btn-u:hover {
+	background: #5fb611;
+  text-decoration: none;
+}
+
+.btn-u.btn-u-red {
+  background: #e74c3c;
+}
+
+
+.btn-u.btn-u-red:hover, 
+.btn-u.btn-u-red:focus, 
+.btn-u.btn-u-red:active, 
+.btn-u.btn-u-red.active, 
+.open .dropdown-toggle.btn-u.btn-u-red {
+   background: #c0392b;
+}
+
+.btn-u.btn-u-orange {
+   background: #e67e22;
+}
+.btn-u.btn-u-orange:hover, 
+.btn-u.btn-u-orange:focus, 
+.btn-u.btn-u-orange:active, 
+.btn-u.btn-u-orange.active, 
+.open .dropdown-toggle.btn-u.btn-u-orange {
+   background: #d35400;
+}
+.btn-u.btn-u-green {
+   background: #2ecc71;
+}
+.btn-u.btn-u-green:hover, 
+.btn-u.btn-u-green:focus, 
+.btn-u.btn-u-green:active, 
+.btn-u.btn-u-green.active, 
+.open .dropdown-toggle.btn-u.btn-u-green {
+   background: #27ae60;
+}
 /*Service
 ------------------------------------*/
 .service .service-icon {
@@ -6057,6 +6102,17 @@ a.read-more:hover {
 /*Typography
 ------------------------------------*/
 /*Heading*/
+/*Block Headline*/
+.headline {
+  display: block;
+  margin: 10px 0 25px 0;
+  border-bottom: 1px dotted #e4e9f0;
+}
+
+.headline h2 {
+  font-size: 22px;
+}
+
 .headline h2, 
 .headline h3, 
 .headline h4 {
@@ -8125,6 +8181,7 @@ a.thumbnail {
    -ms-transition: all 0.8s ease-in-out;
    transition: all 0.8s ease-in-out;
 }
+
 .thumbnail-kenburn:hover img {
    -webkit-transform: scale(1.2) rotate(2deg);
    -moz-transform: scale(1.2) rotate(2deg);
@@ -8261,6 +8318,10 @@ a.thumbnail {
 
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+.margin-bottom-40 {
+ margin-bottom:40px;
 }
 
 .team .thumbnail-style:hover h3 a {
@@ -9265,8 +9326,16 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+.caption:hover a {
+  text-decoration: none;
+}
+
 .contacts-sidebar a{
   color: #555;
+}
+
+ul.lalign {
+  margin: 0 0 10px; 
 }
 
 .contacts-sidebar a:hover{
@@ -9274,6 +9343,183 @@ a, a:link, a:visited {
   background: none;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*One Page
+------------------------------------*/
+.one-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.one-page h1,
+.one-page h2 {
+  color: #fff;
+  font-size: 23px;
+  line-height: 28px;
+  text-shadow: none;
+  margin-bottom: 25px;
+}
+
+.one-page h3.heading-sm {
+  font-size: 19px;
+}
+
+.one-page p {
+  color: #fff;
+}
+
+.one-page .one-default p,
+.one-page .one-default h1,
+.one-page .one-default h2,
+.one-page .one-grey p,
+.one-page .one-grey h1,
+.one-page .one-grey h2 {
+  color: #555;
+}
+
 ul.lalign {
   margin: 0 0 10px; 
 }
+
+.one-page .one-page-btn {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+  padding-left: 30px;
+  padding-right: 30px;  
+}
+
+.one-page .btn-u {
+  margin-bottom: 15px;  
+}
+
+.one-page .one-default {
+  background: #fff;
+}
+.one-page .one-grey {
+  background: #eee;
+}
+.one-page .one-blue {
+  background: #3498db;
+}
+.one-page .one-red {
+  background: #e74c3c;
+}
+.one-page .one-orange {
+  background: #e67e22;
+}
+.one-page .one-green {
+  background: #2ecc71;
+}
+blockquote {
+  padding: 5px 15px;
+  border-left-width: 2px;
+}
+
+blockquote p {
+  font-size: 14px;
+  font-weight: 400;   
+}
+
+blockquote h1,
+blockquote h2,
+blockquote span {
+  font-size: 18px;
+  margin: 0 0 8px;
+  line-height: 24px;
+}
+
+/*Blockquote Styles*/
+blockquote.bq-text-lg p,
+blockquote.bq-text-lg small {
+  text-transform: uppercase;
+}
+
+blockquote.bq-text-lg p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+blockquote.text-right,
+blockquote.hero.text-right {
+  border-left: none;
+  border-right: 2px solid #eee;
+}
+
+blockquote.hero.text-right,
+blockquote.hero.text-right:hover {
+   border-color: #555;
+}
+
+blockquote:hover,
+blockquote.text-right:hover {
+  border-color: #72c02c;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+blockquote.bq-dark,
+blockquote.bq-dark:hover {
+  border-color: #585f69;
+}
+
+blockquote.bq-green {
+  border-color: #72c02c;
+}
+
+/*Blockquote Hero Styles*/
+blockquote.hero {
+  border: none;
+  padding: 18px;
+  font-size: 16px;
+  background: #f3f3f3;
+  border-left: solid 2px #666;
+}
+
+blockquote.hero:hover {
+  background: #eee;
+  border-left-color: #666;
+}
+
+blockquote.hero.hero-dark,
+blockquote.hero.hero-default {
+  border: none;
+}
+
+blockquote.hero.hero-dark {
+  background: #444;
+}
+
+blockquote.hero.hero-dark:hover {
+  background: #555;
+}
+
+blockquote.hero.hero-default {
+  background: #72c02c;
+}
+
+blockquote.hero.hero-default:hover {
+  background: #5fb611;
+}
+
+blockquote.hero.hero-dark p,
+blockquote.hero.hero-dark h2,
+blockquote.hero.hero-dark small,
+blockquote.hero.hero-default p,
+blockquote.hero.hero-default h2,
+blockquote.hero.hero-default small {
+  color: #fff;
+  font-weight: 200;
+}
+
