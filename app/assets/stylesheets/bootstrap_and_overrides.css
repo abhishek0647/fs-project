@@ -6111,18 +6111,7 @@ a.read-more:hover {
 .headline h2, 
 .headline h3, 
 .headline h4 {
-  margin: 0 0 -2px 0;
-  padding-bottom: 5px;
-  display: inline-block;
-  border-bottom: 2px solid #72c02c;
-}
-
-.headline-md {
-  margin-bottom: 15px;
-}
-
-.headline-md h2 {
-  font-size: 21px;
+	border-bottom:2px solid #72c02c;
 }
 
 /*Blockquote*/
@@ -8329,6 +8318,7 @@ a.thumbnail {
 .margin-bottom-40 {
  margin-bottom:40px;
 }
+
 .team .thumbnail-style:hover h3 a {
 	color: #72c02c !important;
 }
@@ -9326,6 +9316,7 @@ ul.labels-demo li {
 .list-style-v1 i {
 	margin-right: 5px;
 } 
+<<<<<<< HEAD
 
 a, a:link, a:visited {
   text-decoration: none;
@@ -10184,53 +10175,25 @@ html[xmlns] .slides {display: block;}
 margin-bottom: 20px;
 }
 
-.hover-effect {
-   -webkit-transition: all 0.4s ease-in-out;
-   -moz-transition: all 0.4s ease-in-out;
-   -o-transition: all 0.4s ease-in-out;
-   transition: all 0.4s ease-in-out;
-}
-.hover-effect-kenburn {
-   left:10px;
-   margin-left:-10px;
-   position:relative;
-   -webkit-transition: all 0.8s ease-in-out;
-   -moz-transition: all 0.8s ease-in-out;
-   -o-transition: all 0.8s ease-in-out;
-   -ms-transition: all 0.8s ease-in-out;
-   transition: all 0.8s ease-in-out;
-}
-.hover-effect-kenburn:hover {
-   -webkit-transform: scale(2) rotate(5deg);
-   -moz-transform: scale(2) rotate(5deg);
-   -o-transform: scale(2) rotate(5deg);
-   -ms-transform: scale(2) rotate(5deg);
-   transform: scale(2) rotate(5deg);
-}
-
-.caption {
-  display: block;
-  padding-top: 5px;
-  color: #585f69 !important;
-  font-size: 18px !important;
-}
-.caption:hover {
-  cursor: pointer;
-  color: #444 !important;
-  text-decoration: underline;
-}
-
-.overflow-hiddden {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.caption:hover {
+a, a:link, a:visited {
   text-decoration: none;
 }
 
 .caption:hover a {
   text-decoration: none;
+}
+
+.contacts-sidebar a{
+  color: #555;
+}
+
+ul.lalign {
+  margin: 0 0 10px; 
+}
+
+.contacts-sidebar a:hover{
+  color: #555;
+  background: none;
 }
 
 .overflow-hidden {
@@ -10275,9 +10238,8 @@ margin-bottom: 20px;
   color: #555;
 }
 
-.one-page .one-page-inner {
-  padding: 30px 0;
-  min-height: 300px;
+ul.lalign {
+  margin: 0 0 10px; 
 }
 
 .one-page .one-page-btn {
