@@ -148,10 +148,6 @@ input::-moz-focus-inner {
   border: 0;
 }
 
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
 input {
   line-height: normal;
 }
@@ -8331,7 +8327,8 @@ a.thumbnail {
 }
 
 .margin-bottom-40 {
- margin-bottom:40px;}
+ margin-bottom:40px;
+}
 .team .thumbnail-style:hover h3 a {
 	color: #72c02c !important;
 }
@@ -9328,6 +9325,23 @@ ul.labels-demo li {
 
 .list-style-v1 i {
 	margin-right: 5px;
+} 
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.contacts-sidebar a{
+  color: #555;
+}
+
+.contacts-sidebar a:hover{
+  color: #555;
+  background: none;
+}
+
+ul.lalign {
+  margin: 0 0 10px;
 }
 
 
