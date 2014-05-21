@@ -9419,7 +9419,7 @@ html[xmlns] .slides {display: block;}
 
 /*parallax-slider.css*/
 
-.da-slider{
+.da-slider {
 	width: 100%;
 	height: 427px;
 	position: relative;
@@ -9448,7 +9448,7 @@ html[xmlns] .slides {display: block;}
 .da-slider-fb .da-slide{
 	left: 100%;
 }
-.da-slider-fb  .da-slide.da-slide-current{
+.da-slider-fb .da-slide.da-slide-current{
 	left: 0px;
 }
 .da-slide h2,
