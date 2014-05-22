@@ -10768,8 +10768,28 @@ blockquote.hero.hero-default small {
 }
 
 .about-us {
-  background: url(/assets/dashboard-main.jpg) no-repeat;
+  background: url(/assets/dashboard-bg.jpg) no-repeat;
   background-size: 100%;
+}
+
+.about-us h1 {
+  color: #FFF;
+  font-size: 56px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.65);
+  padding-top: 32px;
+  padding-bottom: 0;
+  letter-spacing: -1px;
+  font-weight: 900
+}
+
+.about-us h2 {
+  color: #FFF;
+  font-size: 44px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.65);
+  padding-top: 32px;
+  padding-bottom: 0;
+  letter-spacing: -1px;
+  font-weight: 700
 }
 
 .pad-h2 {
@@ -10784,8 +10804,17 @@ blockquote.hero.hero-default small {
 
 .btn-clr {
   color: #fff;
-  background: #00a89c;
+  background: none;
   border: none;
+}
+
+a.btn-clr {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Whitney",helvetica,arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-top: 200px;
 }
 
 .btn-clr:hover {
