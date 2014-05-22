@@ -6030,7 +6030,7 @@ a.read-more:hover {
    font-size: 14px;
    cursor: pointer;
    font-weight: 400;
-   padding: 6px 13px;
+   padding: 9px 13px;
    position: relative;
    background: #72c02c;
    display: inline-block;
@@ -10549,8 +10549,8 @@ ul.lalign {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 200;
-  padding-left: 30px;
-  padding-right: 30px;  
+  padding: 10px 30px;
+  margin-top: 20px  
 }
 
 .one-page .btn-u {
