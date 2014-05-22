@@ -23,6 +23,10 @@ Rails.application.routes.draw do
   get '/contacts' => 'static_pages#contacts'
   get '/resources' => 'static_pages#resources'
   get '/blog' => 'static_pages#blog'
+  get '/metarefresh' => 'static_pages#metarefresh'
+  get '/gamification' => 'static_pages#gamification'
+  get '/gcrc' => 'static_pages#gcrc'
+  get '/mvp' => 'static_pages#mvp'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
