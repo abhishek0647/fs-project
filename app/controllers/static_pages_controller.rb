@@ -18,4 +18,20 @@ class StaticPagesController < ApplicationController
 	def blog
 		
 	end
+
+	def metarefresh
+
+	end
+
+	def gamification
+
+	end
+
+	def gcrc
+		
+	end
+
+	def mvp
+		
+	end
 end
