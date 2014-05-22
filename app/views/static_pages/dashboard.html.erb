@@ -140,3 +140,13 @@
       </div>
     </div>
   </div>
+
+  <div class="container content">
+    <% @events.each do |event| %>
+      <div class="row-fluid">
+        <div class="span12">
+          <%= event.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
