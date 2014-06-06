@@ -14,10 +14,6 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
-input[type="text"].subscribe {
-  padding: 18px 10px;
-}
-
 .carousel-control {
   position: absolute;
   top: 48%;
@@ -34,6 +30,20 @@ input[type="text"].subscribe {
 
 .carousel-control.right {
   right: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  height: auto;
+}
+
+input[type="submit"].sign-in {
+  background: #72c02c;
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: none;
 }
 
 f/* 
@@ -5006,4 +5016,8 @@ a.btn-clr {
 .slider-inner img {
   width: 100%;
   height: 500px;
+}
+
+.contacts-form {
+  margin-left: 15px;
 }
