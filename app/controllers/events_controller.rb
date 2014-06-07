@@ -4,13 +4,13 @@ class EventsController < InheritedResources::Base
 		@event = Event.new(event_params)
 
 		respond_to do |format|
-		if @event.save
-		format.html { redirect_to @event, notice: 'Your event was successfully created.' }
-		format.json { render action: 'show', status: :created, location: @event }
-		else
-		format.html { render action: 'new' }
-		format.json { render json: @event.errors, status: :unprocessable_entity }
-		end
+			if @event.save
+			format.html { redirect_to @event, notice: 'Your event was successfully created.' }
+			format.json { render action: 'show', status: :created, location: @event }
+			else
+			format.html { render action: 'new' }
+			format.json { render json: @event.errors, status: :unprocessable_entity }
+			end
 		end
 	end
 
