@@ -5,7 +5,7 @@ class EventsController < InheritedResources::Base
 
 		respond_to do |format|
 		if @event.save
-		format.html { redirect_to @event, notice: 'Cust iti header was successfully created.' }
+		format.html { redirect_to @event, notice: 'Your event was successfully created.' }
 		format.json { render action: 'show', status: :created, location: @event }
 		else
 		format.html { render action: 'new' }
@@ -17,7 +17,7 @@ class EventsController < InheritedResources::Base
 	def update
 		respond_to do |format|
 			if @event.update(event_params)
-				format.html { redirect_to @event, notice: 'Cust iti header was successfully updated.' }
+				format.html { redirect_to @event, notice: 'Your event was successfully updated.' }
 				format.json { head :no_content }
 			else
 				format.html { render action: 'edit' }
