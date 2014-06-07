@@ -2079,3 +2079,27 @@ a.btn-clr {
   box-shadow: 0 0 3px #eee;
   margin-bottom: 50px;
 }
+
+#event_start_date_1i {
+  width: 25%;
+}
+
+#event_start_date_2i {
+  width: 25%;
+}
+
+#event_start_date_3i {
+  width: 25%;
+}
+
+#event_end_date_1i {
+  width: 25%;
+}
+
+#event_end_date_2i {
+  width: 25%;
+}
+
+#event_end_date_3i {
+  width: 25%;
+}
