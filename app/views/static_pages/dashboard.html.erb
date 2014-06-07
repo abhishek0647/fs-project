@@ -20,133 +20,24 @@
   <div class="container content">
     <!-- Recent Works -->
     <div class="headline">
-      <h2>Recent Works</h2>
+      <h2>Your Events</h2>
     </div>
     <div class="row margin-bottom-20">
+      <% @events.each do |event| %>
       <div class="col-md-3 col-sm-6">
         <div class="thumbnails thumbnail-style thumbnail-kenburn">
           <div class="thumbnail-img">
             <div class="overflow-hidden">
               <%= image_tag 'camera.jpg', class: 'img-responsive' %>
             </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>            
+            <%= link_to 'read more +', event_path(event), class: 'btn-more hover-effect' %>            
           </div>
           <div class="caption">
-            <h3><a class="hover-effect" href="#">Event One</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
+            <h3><%= link_to event.name, event_path(event), class: 'hover-effect' %></h3>
+            <p><%= event.description %></p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'windmill.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                   
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Two</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'tower-clock.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                  
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Three</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'google.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                   
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Four</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
-  
-    <div class="row margin-bottom-20">
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'camera.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>            
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Five</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'windmill.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                   
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Six</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'tower-clock.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                  
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Seven</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnails thumbnail-style thumbnail-kenburn">
-          <div class="thumbnail-img">
-            <div class="overflow-hidden">
-              <%= image_tag 'google.jpg', class: 'img-responsive' %>
-            </div>
-            <a class="btn-more hover-effect" href="#">read more +</a>                   
-          </div>
-          <div class="caption">
-            <h3><a class="hover-effect" href="#">Event Eight</a></h3>
-            <p>This will contain information about the event created i.e. date, time, venue,  organizer, category, etc</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container content">
-    <% @events.each do |event| %>
-      <div class="row-fluid">
-        <div class="span12">
-          <%= event.name %>
-        </div>
-      </div>
-    <% end %>
   </div>
