@@ -2065,7 +2065,10 @@ a.btn-clr {
 .headline h2, 
 .headline h3, 
 .headline h4 {
-  border-bottom:2px solid #72c02c;
+  margin: 0 0 -2px 0;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid #72c02c;
 }
 
 .new_user {
