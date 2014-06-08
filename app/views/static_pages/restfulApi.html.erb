@@ -1,0 +1,152 @@
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Blog Item 1</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li class="active">Blog Item 1</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">   
+      <div class="row blog-page blog-item">
+            <!-- Left Sidebar -->
+          <div class="col-md-12 md-margin-bottom-60">
+                <!--Blog Post-->        
+                <div class="blog margin-bottom-40">
+                    <h2><a href="blog_item_option1.html">Designing a RESTful web API</a></h2>
+                    <div class="blog-post-tags">
+                        <ul class="list-unstyled list-inline blog-info">
+                            <li><i class="fa fa-calendar"></i> February 02, 2013</li>
+                            <li><i class="fa fa-pencil"></i> Nehal Kumar</li>
+                            <li><i class="fa fa-comments"></i> <a href="#">24 Comments</a></li>
+                        </ul>
+                        <ul class="list-unstyled list-inline blog-tags">
+                            <li>
+                                <i class="fa fa-tags"></i> 
+                                <a href="#">Technology</a> 
+                                <a href="#">Education</a>
+                                <a href="#">Internet</a>
+                                <a href="#">Media</a>
+                            </li>
+                        </ul>                                                
+                    </div>
+                    <p> This guest-blog is by Mathias Hansen (also known as Codemonkey), a web and mobile developer. Day-to-day he works for a digital agency and on the side he works on awesome projects with his wife, including Geocodio (ridiculously cheap bulk geocoding) and What’s Open Nearby? (find stores that are open near you!).</p>
+
+                    <p>Introduction</p>
+                    
+                    <p>Everybody provides API’s these days. Some of the most popular ones are Facebook, Twitter, Github, Stripe and the list goes on.</p>
+
+                    <p>So you need to build an API for your website, maybe you need to provide data to a mobile app you’re working on, or maybe you just want to put the data from your website in a format that other developers can easily use to build cool things.</p>
+
+                    <div class="blog-img">
+                        <%= image_tag 'restful-api.jpg', class: "img-responsive" %>
+                    </div>
+
+                    <p>But what is an API exactly? An API is just a fancy term for describing a way for programs (or websites) to exchange data in a format that is easily interpreted by a machine. This is in contrast to regular websites, which are exchanging data in a format that is easily interpreted by a human. For a website, we might use HTML and CSS, but for an API we would use JSON or XML.</p>
+
+                    <p>In this article I will be focusing on designing an API after the RESTful paradigm. REST is basically a list of design rules that makes sure that an API is predictable and easy to understand and use.</p>
+
+
+                    <p>Some of these rules include:</p>
+                    <ul>
+                        <li><strong>Stateless design:</strong>Data will never be stored in a session (each request includes all information needed by the server and client).</li>
+                        <li><strong>Self-descriptive messages:</strong>Ideally you should be able to understand requests and responses after spending minimal time reading the documentation.</li>
+                        <li><strong>Semantics, semantics, semantics:</strong>The API should use existing features of the HTTP protocol to improve the semanticness of input and output (e.g. HTTP Verbs, HTTP Status Codes and HTTP Authentication)</li>
+                    </ul>
+
+                    <p>One of the most difficult decisions to make when designing a RESTful API is to find the fine line between making your API simple enough that it can be tested directly in the browser for most use cases yet still adhere to the design guidelines as closely as possible.</p>
+                    <p>Now that we have laid the ground rules, let’s dive right into some examples of how to implement these rules.</p>
+                </div>
+                <!--End Blog Post-->
+                <hr>
+
+
+                <!-- Recent Comments -->
+                <div class="media">
+                  <h3>Comments</h3>
+                    <a class="pull-left" href="#">
+                        <%= image_tag '3.jpg', class: 'media-object' %>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Abhishek Kumar <span>5 hours ago / <a href="#">Reply</a></span></h4>
+                        <p>Awesome. Very resourceful</p>
+
+                        <hr>
+
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                              <%= image_tag '5.jpg', class: 'media-object' %>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Sumedha Srivastava <span>17 hours ago / <a href="#">Reply</a></span></h4>
+                                <p>Wow. Brilliant</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                              <%= image_tag '17.jpg', class: 'media-object' %>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nehal Kumar <span>2 days ago / <a href="#">Reply</a></span></h4>
+                                <p>Thanks a ton for this motivation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/media-->
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                      <%= image_tag '18.jpg', class: 'media-object' %>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Anisha <span>July 5,2013 / <a href="#">Reply</a></span></h4>
+                        <p>I like the flow of the article</p>
+                    </div>
+                </div><!--/media-->
+                <!-- End Recent Comments -->
+
+                <hr>
+
+                <!-- Comment Form -->
+                <div class="post-comment">
+                  <h3>Leave a Comment</h3>
+                    <form>
+                        <label>Name</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Email <span class="color-red">*</span></label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Message</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-11 col-md-offset-0">
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>                
+                        </div>
+                        
+                        <p><button class="btn-u" type="submit">Send Message</button></p>
+                    </form>
+                </div>
+                <!-- End Comment Form -->
+            </div>
+            <!-- End Left Sidebar -->
+            </div>
+        </div>
+    </div>
+

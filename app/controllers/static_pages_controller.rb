@@ -34,4 +34,20 @@ class StaticPagesController < ApplicationController
 	def mvp
 		
 	end
+
+	def bsblog
+		
+	end
+
+	def syntaxHighlighting
+		
+	end
+
+	def nodejs
+		
+	end
+
+	def restfulApi
+		
+	end
 end

@@ -1,0 +1,135 @@
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Blog Item 1</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li class="active">Blog Item 1</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">   
+      <div class="row blog-page blog-item">
+            <!-- Left Sidebar -->
+          <div class="col-md-12 md-margin-bottom-60">
+                <!--Blog Post-->        
+                <div class="blog margin-bottom-40">
+                    <h2><a href="blog_item_option1.html">Bootstrap 3 Tips and Tricks You Might Not Know</a></h2>
+                    <div class="blog-post-tags">
+                        <ul class="list-unstyled list-inline blog-info">
+                            <li><i class="fa fa-calendar"></i> February 02, 2013</li>
+                            <li><i class="fa fa-pencil"></i> Nehal Kumar</li>
+                            <li><i class="fa fa-comments"></i> <a href="#">24 Comments</a></li>
+                        </ul>
+                        <ul class="list-unstyled list-inline blog-tags">
+                            <li>
+                                <i class="fa fa-tags"></i> 
+                                <a href="#">Technology</a> 
+                                <a href="#">Education</a>
+                                <a href="#">Internet</a>
+                                <a href="#">Media</a>
+                            </li>
+                        </ul>                                                
+                    </div>
+                    <p>Bootstrap 3 has a ton of features and helpers to speed up front-end development. Sometimes you need something and you end up writing your own custom CSS and JavaScript without even realizing that Bootstrap could have done it for you. That’s not necessarily a problem, but you end up spending extra time on your app or site when you didn’t need to.</p>
+                    
+                    <p>Bootstrap is a front-end framework. I personally use it with 99% of my front-end development. In the last 6 months, I have been lucky enough to work on some pretty custom bootstrap based projects to name some off. The purpose of this article is to share the things that I have learned and touch-base on some other things that I have seen people miss about the framework’s capabilities.</p>
+                    <div class="blog-img">
+                        <%= image_tag 'bs-blog.jpg', class: "img-responsive" %>
+                    </div>
+                    <h3>How to Enable Bootstrap 3 Hover Dropdowns</h3>
+                    <p>I love Bootstrap, but I’m not really a fan of the navigation it creates. It works really well when you’re prototyping, but if you’re doing a high-level design project, you’re better off going custom. Bootstap’s default navigation doesn’t have out-of-the-box hover dropdowns, and the mobile menu is arguably pretty boring. If you do use it though, there are some tricks to help you tweak it without going completely custom.</p>
+                    <p>Some clients, sites, or apps will require you to have hover dropdowns on desktop. As you can see below, this doesn’t come out-of-the-box with Bootstrap 3.</p>
+                </div>
+                <!--End Blog Post-->
+                <hr>
+
+
+                <!-- Recent Comments -->
+                <div class="media">
+                  <h3>Comments</h3>
+                    <a class="pull-left" href="#">
+                        <%= image_tag '3.jpg', class: 'media-object' %>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Abhishek Kumar <span>5 hours ago / <a href="#">Reply</a></span></h4>
+                        <p>Awesome. Very resourceful</p>
+
+                        <hr>
+
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                              <%= image_tag '5.jpg', class: 'media-object' %>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Sumedha Srivastava <span>17 hours ago / <a href="#">Reply</a></span></h4>
+                                <p>Wow. Brilliant</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                              <%= image_tag '17.jpg', class: 'media-object' %>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nehal Kumar <span>2 days ago / <a href="#">Reply</a></span></h4>
+                                <p>Thanks a ton for this motivation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/media-->
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                      <%= image_tag '18.jpg', class: 'media-object' %>
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Anisha <span>July 5,2013 / <a href="#">Reply</a></span></h4>
+                        <p>I like the flow of the article</p>
+                    </div>
+                </div><!--/media-->
+                <!-- End Recent Comments -->
+
+                <hr>
+
+                <!-- Comment Form -->
+                <div class="post-comment">
+                  <h3>Leave a Comment</h3>
+                    <form>
+                        <label>Name</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Email <span class="color-red">*</span></label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-7 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Message</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-11 col-md-offset-0">
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>                
+                        </div>
+                        
+                        <p><button class="btn-u" type="submit">Send Message</button></p>
+                    </form>
+                </div>
+                <!-- End Comment Form -->
+            </div>
+            <!-- End Left Sidebar -->
+            </div>
+        </div>
+    </div>
+
