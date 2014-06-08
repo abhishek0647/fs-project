@@ -27,7 +27,10 @@ Rails.application.routes.draw do
   get '/gamification' => 'static_pages#gamification'
   get '/gcrc' => 'static_pages#gcrc'
   get '/mvp' => 'static_pages#mvp'
-  
+  get '/bsblog' => 'static_pages#bsblog'
+  get '/syntaxHighlighting' => 'static_pages#syntaxHighlighting'
+  get '/nodejs' => 'static_pages#nodejs'
+  get '/restfulApi' => 'static_pages#restfulApi'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
