@@ -19,22 +19,6 @@ class StaticPagesController < ApplicationController
 		
 	end
 
-	def metarefresh
-
-	end
-
-	def gamification
-
-	end
-
-	def gcrc
-		
-	end
-
-	def mvp
-		
-	end
-
 	def bsblog
 		
 	end
