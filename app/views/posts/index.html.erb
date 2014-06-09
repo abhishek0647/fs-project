@@ -1,0 +1,55 @@
+<%= provide(:title, 'Blogs - Index') %>
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Blog Timeline</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li class="active">Blog Timeline</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <div class="container content"> 
+        <ul class="timeline-v1">
+          <% @posts.in_groups_of(2).each do |post_group| %>
+            <div class="row">
+              <div class="col-md-12">
+                <% post_group.each do |post| %>
+                  <% break if post.nil? %>
+                  <li class="col-md-6">
+                      <div class="timeline-badge primary"><i class="glyphicon glyphicon-record"></i></div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <%= image_tag post.image_url, class: 'img-responsive' %>
+                          </div>
+                          <div class="timeline-body text-justify">
+                              <h2><%= link_to post.title , bsblog_path %></h2>
+                              <p><%= post.body %></p>
+                              
+                              <%= link_to 'Read more', bsblog_path, class: 'btn-u btn-u-sm' %>
+                          </div>
+                          <div class="timeline-footer">
+                              <ul class="list-unstyled list-inline blog-info">
+                                  <li><i class="fa fa-clock-o"></i> March 28, 2014</li>
+                                  <li><i class="fa fa-comments-o"></i> <a href="#">7 Comments</a></li>
+                              </ul>
+                              <a class="likes" href="#"><i class="fa fa-heart"></i>239</a>
+
+                               <%= link_to 'Show', post %>
+                               <%= link_to 'Edit', edit_post_path(post) %>
+                               <%= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+                          </div>
+                      </div>
+                  </li>                
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </ul>
+    </div>
+
+    <%= link_to 'New Post', new_post_path %>
+

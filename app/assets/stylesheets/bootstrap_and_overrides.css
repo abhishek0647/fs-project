@@ -1377,10 +1377,6 @@ position: relative;
 
 .timeline-v1 > li {
 margin-bottom: 40px;
-position: relative;
-width: 50%;
-float: left;
-clear: left;
 }
 
 .timeline-v1 > li > .timeline-badge {
