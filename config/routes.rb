@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   get '/syntaxHighlighting' => 'static_pages#syntaxHighlighting'
   get '/nodejs' => 'static_pages#nodejs'
   get '/restfulApi' => 'static_pages#restfulApi'
+
+  post "home/contact" => 'static_pages#contactform'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
