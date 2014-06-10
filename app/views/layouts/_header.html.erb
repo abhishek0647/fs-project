@@ -6,8 +6,9 @@
             <div class="container">
                 <!-- Topbar Navigation -->
                 <ul class="loginbar pull-right">   
-                    <li><%= link_to 'Login', new_user_session_path %></li>
+                    <li style="margin-right: 10px"><%= link_to 'Login', new_user_session_path %></li>
                     <li style="margin-right: 10px"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete%> </li>
+                    <li><%= link_to "Sign up", new_user_registration_path %>
                 </ul>
                 <!-- End Topbar Navigation -->
             </div>
