@@ -1,0 +1,9 @@
+<%= div_for comment do %>
+        <p>
+                <strong>
+                        Posted On <%= comment.created_at.strftime("%a %b #{comment.created_at.day.ordinalize}") %>
+                </strong>
+                <br/>
+                <%= comment.body %>
+        </p>
+<% end %>

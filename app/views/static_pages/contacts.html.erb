@@ -26,7 +26,7 @@
 
                 <p>Thank you</p>
                 <hr>
-                <form>
+                <form id="app-contact-form">
                     <label>Name</label>
                     <div class="row margin-bottom-20">
                         <div class="col-md-11 ">
@@ -37,19 +37,20 @@
                     <label>Email <span class="color-red">*</span></label>
                     <div class="row margin-bottom-20">
                         <div class="col-md-11 ">
-                            <input type="text" class="form-control contacts-form">
+                            <input type="text" class="form-control contacts-form" id ="contact-email">
                         </div>                
                     </div>
                     
                     <label>Message</label>
                     <div class="row margin-bottom-20">
                         <div class="col-md-11 ">
-                            <textarea rows="8" class="form-control contacts-form"></textarea>
+                            <textarea rows="8" class="form-control contacts-form" id="contact-body"></textarea>
                         </div>                
                     </div>
 
-                    <p><button type="submit" class="btn-u">Send Message</button></p>
+                    <p><button type="submit" class="btn-u" id="contact-submit">Send Message</button></p>
                 </form>
+                <p class="mail-msg"></p>
             </div><!--/col-md-9-->
         
 

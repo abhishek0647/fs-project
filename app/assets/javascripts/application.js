@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
 //= require jquery_nested_form
 //= require_tree .
@@ -39,3 +38,24 @@
 //= require jquery.flexslider
 //= require modernizr
 //= require jquery.cslider
+//= require twitter/bootstrap
+
+$(function() {
+  return $('#contact-submit').on("click", function(e) {
+    var body, email, url;
+    e.preventDefault();
+    $('#contact-submit').val("Sending Message...");
+    url = '/home/contact';
+    email = $('#contact-email').val();
+    body = $('#contact-body').val();
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: {
+        'email': email,
+        'body': body
+      }
+    });
+    return false;
+  });
+});
