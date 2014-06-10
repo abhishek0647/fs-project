@@ -4,6 +4,6 @@ class ContactMailer < ActionMailer::Base
   def new_contact(email,body)
   	@email = email
   	@body = body
-  	mail to: "Admin <mail@skykog.com>", subject: "New Mail"
+  	mail to: "Admin <abhishek0647@gmail.com>", subject: "New Contact Mail"
   end
 end

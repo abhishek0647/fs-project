@@ -26,10 +26,10 @@
                               <%= image_tag post.image_url, class: 'img-responsive' %>
                           </div>
                           <div class="timeline-body text-justify">
-                              <h2><%= link_to post.title , bsblog_path %></h2>
+                              <h2><%= link_to post.title , post_path(post) %></h2>
                               <p><%= post.body %></p>
                               
-                              <%= link_to 'Read more', bsblog_path, class: 'btn-u btn-u-sm' %>
+                              <%= link_to 'Read more', post_path(post), class: 'btn-u btn-u-sm' %>
                           </div>
                           <div class="timeline-footer">
                               <ul class="list-unstyled list-inline blog-info">

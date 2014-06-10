@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get '/dashboard' => 'static_pages#dashboard'
   get '/contacts' => 'static_pages#contacts'
   get '/resources' => 'static_pages#resources'
-  get '/blog' => 'static_pages#blog'
+  get '/blog' => 'posts#index'
   get '/bsblog' => 'static_pages#bsblog'
   get '/syntaxHighlighting' => 'static_pages#syntaxHighlighting'
   get '/nodejs' => 'static_pages#nodejs'
